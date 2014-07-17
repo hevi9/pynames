@@ -1,0 +1,9 @@
+# Project basic information
+# this is to be imported/included by python, sh, make
+
+name    = "pynames"
+title   = "pynames title here"
+version = 1
+author  = "Petri Heinilä"
+url     = "http://github.com/hevi9/pynames"
+license = "LGPL 2.1"
