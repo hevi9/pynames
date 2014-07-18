@@ -11,6 +11,4 @@ class Stats:
     assert name is not None
     self.names[name] = self.names.setdefault(name, 0) + 1
 
-  def report(self):
-    print("\n".join(["%s\t%s" % (self.names[x],x) for x in sorted(self.names)]))
 

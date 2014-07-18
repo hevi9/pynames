@@ -1,0 +1,61 @@
+body {
+	font-family:arial, verdana, sans-serif;
+	font-size: 11pt;
+	background-color: #aaa;
+	margin: 0;
+}
+
+.tabs {
+	width: 100%;
+}
+
+div.tabs section {
+	position: absolute;
+	display: none;
+	background-color: #fff;
+	margin: 0;
+	padding: 4pt;
+	width: 100%;
+}
+
+div.tabs section:first-child
+{
+  display: block;
+}
+
+div.tabs section:target
+{
+  display: block;
+}
+
+
+#names {		
+	padding: 0;
+	margin: 0;	
+}
+
+#names li {
+	list-style-type: none;
+	display: inline-table;
+	border: 1pt solid #aaa;
+	width: 18%;
+	text-decoration: none; 
+	background: #eee;
+  margin-top: 1pt;
+  margin-bottom: 2pt;
+  padding-left: 3pt;
+  padding-right: 2pt;
+  padding-bottom: 1pt;
+}
+
+.right {
+	/* text-align: right; */
+	float: right;
+}
+
+.slot {
+	background-color: #fff;
+	width: 100%;
+	padding: 4pt;
+	margin: 0;
+}

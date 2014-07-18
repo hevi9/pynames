@@ -15,7 +15,12 @@ setup(
   author=info["author"],
   url=info["url"],
   license = info["license"],
-  packages = find_packages(),
+  packages = ["pynames"],
+  package_data = {
+    "pynames": [
+      "default/*",
+    ]
+  },  
   entry_points={
     "console_scripts": [
       "pynames=pynames.main:main"

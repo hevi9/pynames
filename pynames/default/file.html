@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<head>
+<title>{{page.title}}</title>
+<style>
+{% include "file.css" %}
+</style>
+</head>
+
+<body>
+
+<div class="slot">
+Names {{stats.names | length}}
+<span class="right">
+Sort:
+<a href="#alpha">Alpha</a>
+<a href="#count">Count</a>
+</span>
+</div>
+
+
+<div class="tabs">
+
+<section id="alpha">
+<ul id="names">
+{% for name, occur in stats.names | dictsort(true) %}
+<li>{{name}} ({{occur}})</li>
+{% endfor %}
+</ul>
+</section>
+
+<section id="count">
+<ul id="names">
+{% for name, occur in stats.names | dictsort(true, "value") %}
+<li>{{name}} ({{occur}})</li>
+{% endfor %}
+</ul>
+</section>
+
+</div>
+
+</body>
+</html>
