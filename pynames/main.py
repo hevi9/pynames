@@ -25,7 +25,7 @@ def extract(file, stats):
   v.visit(tree)
 
 def report(stats):
-  print("\n".join(["%s\t%s" % (stats.names[x],x) for x in sorted(stats.names)]))
+  print("\n".join(["%s\t%s" % (stats.names[x].count,x) for x in sorted(stats.names)]))
 
 def report_html(stats, html_file):
   jenv = jinja2.Environment(loader=jinja2.PackageLoader("pynames", "default"))
