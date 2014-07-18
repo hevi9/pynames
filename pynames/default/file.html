@@ -26,16 +26,16 @@ Names {{stats.names | length}}
 
 <section id="alpha" active>
 <ul id="names">
-{% for name, occur in stats.names | dictsort(true) %}
-<li>{{name}} ({{occur}})</li>
+{% for name, item in stats.names | dictsort(true) %}
+<li>{{name}} ({{item.count}})</li>
 {% endfor %}
 </ul>
 </section>
 
 <section id="count">
 <ul id="names">
-{% for name, occur in stats.names | dictsort(true, "value") %}
-<li>{{name}} ({{occur}})</li>
+{% for item in stats.names.values() | sort(attribute="count", reverse=True) %}
+<li>{{item.name}} ({{item.count}})</li>
 {% endfor %}
 </ul>
 </section>
