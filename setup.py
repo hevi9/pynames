@@ -15,6 +15,8 @@ setup(
   author=info["author"],
   url=info["url"],
   license = info["license"],
+  install_requires = ["jinja2"],
+  zip_safe=False, 
   packages = ["pynames"],
   package_data = {
     "pynames": [
