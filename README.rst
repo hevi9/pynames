@@ -1,4 +1,10 @@
-pynames
-=========
+Count and present the usage of names in python source code
+**********************************************************
 
-Status: 
+Install
+=======
+
+https://github.com/hevi9/pynames.git
+
+Usage
+=====

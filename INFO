@@ -3,7 +3,7 @@
 
 name    = "pynames"
 title   = "pynames title here"
-version = 1
+version = "0.1.0"
 author  = "Petri Heinilä"
 url     = "http://github.com/hevi9/pynames"
 license = "LGPL 2.1"

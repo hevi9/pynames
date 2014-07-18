@@ -1,3 +1,7 @@
+#!/usr/bin/env python3
+## -*- coding: utf-8 -*-
+## Copyright (C) 2014 Petri Heinilä, LGPL 2.1
+
 import logging
 log = logging.getLogger(__name__)
 
