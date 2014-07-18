@@ -13,3 +13,28 @@ Requirements::
 
 Usage
 =====
+
+List name usage to terminal, for example in this pynames project::
+
+  > pynames pynames/*.py
+  
+==>::
+
+  1 *
+  5 ARGS
+  3 AST
+  1 ArgumentParser
+  1 D
+  1 DEBUG
+  ..
+  
+List name usage to terminal, for example in this pynames project::
+
+  > pynames --html out.html pynames/*.py
+  > firefox out.html
+  
+==>::
+
+  XXX
+  
+  
