@@ -5,6 +5,7 @@
 import sys      # http://docs.python.org/py3k/library/sys.html
 import argparse # http://docs.python.org/py3k/library/argparse.html
 import logging  # http://docs.python.org/py3k/library/logging.html
+import datetime
 log = logging.getLogger(__name__)
 D = log.debug
 I = log.info
@@ -31,7 +32,8 @@ def report_html(stats, html_file):
   tmpl = jenv.get_template("file.html")
   ctx = {
     "page": {
-       "title": "pynames"
+       "title": "pynames",
+       "time": datetime.datetime.now().isoformat(),
      },
     "stats": stats
   }
