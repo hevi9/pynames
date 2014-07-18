@@ -27,6 +27,7 @@ section {
 	display: inline-table;
 	border: 1pt solid #aaa;
 	width: 18%;
+	/* width: 20ex; */
 	text-decoration: none; 
 	background: #eee;
   margin-top: 1pt;
