@@ -43,3 +43,22 @@ lint::
 	$(PYLINT) $(name)
 
 style:: pep8 lint
+
+##############################################################################
+## my gh-pages update
+
+github = git@github.com:hevi9/$(name).git
+ghpages_dir = $(cache)/ghpages
+
+$(ghpages_dir):
+	mkdir -p $(cache)
+	git clone --single-branch --branch gh-pages $(github) $(ghpages_dir)
+  
+gh-content: $(ghpages_dir) develop
+	pynames --html $(ghpages_dir)/pynames.html pynames/*.py
+  
+gh-pages: gh-content
+	cd $(ghpages_dir) && git add .
+	cd $(ghpages_dir) && git commit -a -m "Auto update"
+	cd $(ghpages_dir) && git push origin gh-pages
+
