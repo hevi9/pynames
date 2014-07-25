@@ -10,7 +10,7 @@ Install from github::
 
   > pip3 install git+git://github.com/hevi9/pynames.git
 
-Requirements:
+Requirements::
 
   * Python 3
   * jinja2
@@ -22,7 +22,7 @@ List name usage to terminal, for example in this pynames project::
 
   > pynames pynames/*.py
   
-==>:
+==>::
 
   1 *
   5 ARGS
@@ -37,8 +37,6 @@ List name usage to html file, for example in this pynames project::
   > pynames --html out.html pynames/*.py
   > firefox out.html
   
-==>:
-
-  XXX
+==> out.html
   
   
