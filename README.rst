@@ -1,7 +1,9 @@
 pynames
 *******
 
-Count and present the usage of names in python source code.
+Count and present the usage of names in python source code. Point of this
+tool is to study name usage in code and find out names that could be contextually
+reused. 
 
 Install
 =======
@@ -12,8 +14,8 @@ Install from github::
 
 Requirements::
 
-  * Python 3
-  * jinja2
+ * Python 3
+ * jinja2
 
 Usage
 =====
