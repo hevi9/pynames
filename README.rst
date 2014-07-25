@@ -38,7 +38,14 @@ List name usage to html file, for example in this pynames project::
 
   > pynames --html out.html pynames/*.py
   > firefox out.html
+
+==> out.html as http://hevi9.github.io/pynames/pynames.html  
   
-==> out.html as http://hevi9.github.io/pynames/pynames.html
+List name usage in python library::
+
+  > find /usr/lib/python3.4 -name "*py" | xargs pynames --html out.html
+  > firefox out.html
+  
+==> out.html as http://hevi9.github.io/pynames/python-lib.html
   
   

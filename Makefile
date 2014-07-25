@@ -56,6 +56,7 @@ $(ghpages_dir):
   
 gh-content: $(ghpages_dir) develop
 	pynames --html $(ghpages_dir)/pynames.html pynames/*.py
+	find /usr/lib/python3.4 -name "*py" | xargs pynames --html $(ghpages_dir)/python-lib.html
   
 gh-pages: gh-content
 	cd $(ghpages_dir) && git add .
