@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<head>
+<title>pynames</title>
+<style>
+body {
+	font-family:arial, verdana, sans-serif;
+	font-size: 11pt;
+	background-color: #999;
+	margin: 0;
+}
+
+section {
+	display: none;
+	background-color: #fff;
+	margin: 0;
+	padding: 4pt;
+	width: 100%;
+}
+
+[active] {
+  display: block;
+}
+
+#names {		
+	padding: 0;
+	margin: 0;	
+}
+
+#names li {
+	list-style-type: none;
+	display: inline-table;
+	border: 1pt solid #aaa;
+	width: 18%;
+	/* width: 20ex; */
+	text-decoration: none; 
+	background: #eee;
+  margin-top: 1pt;
+  margin-bottom: 2pt;
+  padding-left: 3pt;
+  padding-right: 2pt;
+  padding-bottom: 1pt;
+  border-radius: 3pt;
+}
+
+.right {
+	text-align: right;
+	float: right; 
+	margin-right: 6pt;
+}
+
+.slot {
+	background-color: #fff;
+	width: 100%;
+	padding: 4pt;
+	margin: 0;
+}
+</style>
+<script type="text/javascript">
+function activateSection(id) {
+	// document.getElementsBy
+	console.log("HERE" + id);
+	var section = document.getElementById(id);
+	var sections = document.getElementsByTagName("section");
+	var i;
+	for (i = 0; i < sections.length; i++) {
+		sections[i].removeAttribute("active");
+	}
+	section.setAttribute("active","");	
+}
+</script>
+
+</head>
+
+<body>
+
+
+<div class="slot">
+Names 126
+<span class="right">
+<input type="radio" name="order" checked onclick="activateSection('alpha')"/>Alpha
+<input type="radio" name="order" onclick="activateSection('count')"/>Count
+</span>
+</div>
+
+
+<section id="alpha" active>
+<ul id="names">
+
+<li>* (1)</li>
+
+<li>ARGS (5)</li>
+
+<li>AST (3)</li>
+
+<li>ArgumentParser (1)</li>
+
+<li>D (1)</li>
+
+<li>DEBUG (1)</li>
+
+<li>E (1)</li>
+
+<li>Environment (1)</li>
+
+<li>I (1)</li>
+
+<li>Item (2)</li>
+
+<li>NodeVisitor (1)</li>
+
+<li>PackageLoader (1)</li>
+
+<li>SKIP (2)</li>
+
+<li>Stats (3)</li>
+
+<li>TypeError (1)</li>
+
+<li>Visitor (3)</li>
+
+<li>__class__ (3)</li>
+
+<li>__init__ (3)</li>
+
+<li>__name__ (8)</li>
+
+<li>_add_name_cb (11)</li>
+
+<li>_attributes (2)</li>
+
+<li>_fields (1)</li>
+
+<li>_file (1)</li>
+
+<li>_format (5)</li>
+
+<li>a (6)</li>
+
+<li>add_argument (3)</li>
+
+<li>add_name (2)</li>
+
+<li>add_name_cb (2)</li>
+
+<li>annotate_fields (2)</li>
+
+<li>annotation (2)</li>
+
+<li>append (2)</li>
+
+<li>arg (2)</li>
+
+<li>argparse (2)</li>
+
+<li>args (5)</li>
+
+<li>argv (1)</li>
+
+<li>ast (6)</li>
+
+<li>attr (2)</li>
+
+<li>b (4)</li>
+
+<li>basicConfig (1)</li>
+
+<li>close (1)</li>
+
+<li>code (2)</li>
+
+<li>count (3)</li>
+
+<li>ctx (2)</li>
+
+<li>datetime (3)</li>
+
+<li>debug (2)</li>
+
+<li>dict (1)</li>
+
+<li>dump (2)</li>
+
+<li>error (1)</li>
+
+<li>exit (1)</li>
+
+<li>extend (2)</li>
+
+<li>extract (2)</li>
+
+<li>f (3)</li>
+
+<li>fd (2)</li>
+
+<li>field (5)</li>
+
+<li>fields (7)</li>
+
+<li>file (7)</li>
+
+<li>filename (4)</li>
+
+<li>files (1)</li>
+
+<li>fo (2)</li>
+
+<li>fstr (2)</li>
+
+<li>generic_visit (12)</li>
+
+<li>getLogger (4)</li>
+
+<li>get_template (1)</li>
+
+<li>getattr (2)</li>
+
+<li>html (2)</li>
+
+<li>html_file (3)</li>
+
+<li>id (2)</li>
+
+<li>include_attributes (2)</li>
+
+<li>indent (3)</li>
+
+<li>info (2)</li>
+
+<li>isinstance (4)</li>
+
+<li>isoformat (1)</li>
+
+<li>item (4)</li>
+
+<li>iter_fields (1)</li>
+
+<li>jenv (2)</li>
+
+<li>jinja2 (3)</li>
+
+<li>join (5)</li>
+
+<li>len (1)</li>
+
+<li>level (6)</li>
+
+<li>lines (6)</li>
+
+<li>list (2)</li>
+
+<li>log (9)</li>
+
+<li>logging (9)</li>
+
+<li>main (2)</li>
+
+<li>module (2)</li>
+
+<li>name (24)</li>
+
+<li>names (10)</li>
+
+<li>node (59)</li>
+
+<li>not_handled (3)</li>
+
+<li>now (1)</li>
+
+<li>obj (6)</li>
+
+<li>open (3)</li>
+
+<li>parse (2)</li>
+
+<li>parse_args (1)</li>
+
+<li>pprint (2)</li>
+
+<li>print (6)</li>
+
+<li>pynames.ast_visit (1)</li>
+
+<li>pynames.stats (1)</li>
+
+<li>read (2)</li>
+
+<li>render (1)</li>
+
+<li>report (2)</li>
+
+<li>report_html (2)</li>
+
+<li>repr (1)</li>
+
+<li>self (33)</li>
+
+<li>setLevel (1)</li>
+
+<li>sorted (1)</li>
+
+<li>stats (11)</li>
+
+<li>super (11)</li>
+
+<li>sys (4)</li>
+
+<li>tmpl (2)</li>
+
+<li>tree (2)</li>
+
+<li>v (2)</li>
+
+<li>visit (1)</li>
+
+<li>visit_Attribute (1)</li>
+
+<li>visit_ClassDef (1)</li>
+
+<li>visit_ExceptHandler (1)</li>
+
+<li>visit_FunctionDef (1)</li>
+
+<li>visit_Global (1)</li>
+
+<li>visit_ImportFrom (1)</li>
+
+<li>visit_Name (1)</li>
+
+<li>visit_Nonlocal (1)</li>
+
+<li>visit_alias (1)</li>
+
+<li>visit_arg (1)</li>
+
+<li>warn (2)</li>
+
+<li>write (1)</li>
+
+<li>x (5)</li>
+
+</ul>
+</section>
+
+<section id="count">
+<ul id="names">
+
+<li>node (59)</li>
+
+<li>self (33)</li>
+
+<li>name (24)</li>
+
+<li>generic_visit (12)</li>
+
+<li>_add_name_cb (11)</li>
+
+<li>super (11)</li>
+
+<li>stats (11)</li>
+
+<li>names (10)</li>
+
+<li>log (9)</li>
+
+<li>logging (9)</li>
+
+<li>__name__ (8)</li>
+
+<li>fields (7)</li>
+
+<li>file (7)</li>
+
+<li>print (6)</li>
+
+<li>obj (6)</li>
+
+<li>a (6)</li>
+
+<li>level (6)</li>
+
+<li>lines (6)</li>
+
+<li>ast (6)</li>
+
+<li>ARGS (5)</li>
+
+<li>x (5)</li>
+
+<li>join (5)</li>
+
+<li>_format (5)</li>
+
+<li>args (5)</li>
+
+<li>field (5)</li>
+
+<li>sys (4)</li>
+
+<li>b (4)</li>
+
+<li>isinstance (4)</li>
+
+<li>getLogger (4)</li>
+
+<li>filename (4)</li>
+
+<li>item (4)</li>
+
+<li>AST (3)</li>
+
+<li>html_file (3)</li>
+
+<li>not_handled (3)</li>
+
+<li>open (3)</li>
+
+<li>Visitor (3)</li>
+
+<li>Stats (3)</li>
+
+<li>indent (3)</li>
+
+<li>datetime (3)</li>
+
+<li>__init__ (3)</li>
+
+<li>__class__ (3)</li>
+
+<li>count (3)</li>
+
+<li>jinja2 (3)</li>
+
+<li>f (3)</li>
+
+<li>add_argument (3)</li>
+
+<li>arg (2)</li>
+
+<li>debug (2)</li>
+
+<li>annotate_fields (2)</li>
+
+<li>jenv (2)</li>
+
+<li>extract (2)</li>
+
+<li>code (2)</li>
+
+<li>report (2)</li>
+
+<li>ctx (2)</li>
+
+<li>v (2)</li>
+
+<li>include_attributes (2)</li>
+
+<li>extend (2)</li>
+
+<li>add_name (2)</li>
+
+<li>attr (2)</li>
+
+<li>module (2)</li>
+
+<li>fo (2)</li>
+
+<li>list (2)</li>
+
+<li>fd (2)</li>
+
+<li>id (2)</li>
+
+<li>html (2)</li>
+
+<li>report_html (2)</li>
+
+<li>pprint (2)</li>
+
+<li>fstr (2)</li>
+
+<li>dump (2)</li>
+
+<li>read (2)</li>
+
+<li>append (2)</li>
+
+<li>tree (2)</li>
+
+<li>parse (2)</li>
+
+<li>getattr (2)</li>
+
+<li>annotation (2)</li>
+
+<li>tmpl (2)</li>
+
+<li>argparse (2)</li>
+
+<li>warn (2)</li>
+
+<li>Item (2)</li>
+
+<li>SKIP (2)</li>
+
+<li>_attributes (2)</li>
+
+<li>add_name_cb (2)</li>
+
+<li>info (2)</li>
+
+<li>main (2)</li>
+
+<li>now (1)</li>
+
+<li>DEBUG (1)</li>
+
+<li>TypeError (1)</li>
+
+<li>visit (1)</li>
+
+<li>isoformat (1)</li>
+
+<li>pynames.ast_visit (1)</li>
+
+<li>len (1)</li>
+
+<li>visit_alias (1)</li>
+
+<li>visit_Nonlocal (1)</li>
+
+<li>visit_Name (1)</li>
+
+<li>* (1)</li>
+
+<li>visit_ClassDef (1)</li>
+
+<li>argv (1)</li>
+
+<li>pynames.stats (1)</li>
+
+<li>Environment (1)</li>
+
+<li>write (1)</li>
+
+<li>get_template (1)</li>
+
+<li>visit_Attribute (1)</li>
+
+<li>D (1)</li>
+
+<li>_file (1)</li>
+
+<li>I (1)</li>
+
+<li>render (1)</li>
+
+<li>ArgumentParser (1)</li>
+
+<li>NodeVisitor (1)</li>
+
+<li>close (1)</li>
+
+<li>visit_arg (1)</li>
+
+<li>files (1)</li>
+
+<li>error (1)</li>
+
+<li>PackageLoader (1)</li>
+
+<li>exit (1)</li>
+
+<li>sorted (1)</li>
+
+<li>repr (1)</li>
+
+<li>dict (1)</li>
+
+<li>_fields (1)</li>
+
+<li>iter_fields (1)</li>
+
+<li>parse_args (1)</li>
+
+<li>basicConfig (1)</li>
+
+<li>visit_ExceptHandler (1)</li>
+
+<li>setLevel (1)</li>
+
+<li>E (1)</li>
+
+<li>visit_ImportFrom (1)</li>
+
+<li>visit_Global (1)</li>
+
+<li>visit_FunctionDef (1)</li>
+
+</ul>
+</section>
+
+<p class="right">
+Generated by <a href="http://github.com/hevi9/pynames">pynames</a> at
+2014-07-25T17:05:04.980627
+</p>
+
+</body>
+</html>
