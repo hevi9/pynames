@@ -46,6 +46,6 @@ List name usage in python library::
   > find /usr/lib/python3.4 -name "*py" | xargs pynames --html out.html
   > firefox out.html
   
-==> out.html as http://hevi9.github.io/pynames/python-lib.html
+==> out.html as http://hevi9.github.io/pynames/python-lib.html (over 20k names, takes a while)
   
   
