@@ -20,7 +20,7 @@ import jinja2
 def extract(file, stats):
   with open(file) as fo:
     code = fo.read()
-  tree = ast.parse(code)
+  tree = ast.parse(code, file)
   v = Visitor(stats.add_name, file)
   v.visit(tree)
 
